@@ -35,7 +35,7 @@ git config user.email "ankeet.maini@gmail.com"
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add .
+git add -A
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
