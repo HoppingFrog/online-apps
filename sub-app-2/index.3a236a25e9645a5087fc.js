@@ -1,0 +1,1 @@
+webpackJsonp([3],[function(e,n,t){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var u=t(1),l=r(u),d=t(1),o=function(e){var n=e.children;return l.default.createElement("div",null,n)};o.propTypes={children:l.default.PropTypes.node},(0,d.render)(l.default.createElement(o,null,"Sub App B"),document.getElementById("root"))}]);

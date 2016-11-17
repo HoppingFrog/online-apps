@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "6"
+install:
+  - npm install
+script: bash ./deploy.sh
+env:
+  global:
+    - ENCRYPTION_LABEL: 652f79b2f205
+    - COMMIT_AUTHOR_EMAIL: ankeet.maini@gmail.com
