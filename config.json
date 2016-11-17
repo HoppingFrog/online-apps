@@ -1,0 +1,19 @@
+{ 
+  "template": "./index.tpl.html",
+  "sharedBundle": "shared",
+  "apps": [
+    {
+        "folder": "app",
+        "title": "Main App",
+        "isMain": true
+      },
+      {
+        "folder": "sub-app-1",
+        "title": "Awesome Sub App 2"
+      },
+      {
+        "folder": "sub-app-2",
+        "title": "Awesome Sub App 2"
+      }
+    ]
+}
