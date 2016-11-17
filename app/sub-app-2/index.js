@@ -10,6 +10,6 @@ App2.propTypes = {
 };
 
 render(
-  <App2>Sub App `B`</App2>,
+  <App2>Sub App B</App2>,
   document.getElementById('root'),
 );
