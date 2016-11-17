@@ -26,7 +26,7 @@ const allEntries = fs.readdirSync(appDir)
   .filter(sub => isDirectory(path.resolve(app, sub)))
   .reduce((prev, curr) => {
     const newPrev = Object.assign({}, prev); // because eslint :/
-    newPrev[`${app}/${curr}/index`] = path.join(appDir, curr);
+    newPrev[`${curr}/index`] = path.join(appDir, curr);
     return newPrev;
   }, {
     app,

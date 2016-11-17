@@ -27,7 +27,7 @@ function getContext (app, namedChunks, emitConfig) {
     const appChunkName = Object.keys(namedChunks).filter(n => n.match(app.folder))[0];
     appChunk = namedChunks[appChunkName];
   }
-  const sharedScript = `${getScriptTag(app.isMain ? sharedChunk.name : `../../${sharedChunk.name}`, sharedChunk.renderedHash)}`; 
+  const sharedScript = `${getScriptTag(app.isMain ? sharedChunk.name : `../${sharedChunk.name}`, sharedChunk.renderedHash)}`; 
   const scripts = `${sharedScript}${getScriptTag(app.isMain ? app.folder : 'index', appChunk.renderedHash)}`;
   return { title, scripts };
 }

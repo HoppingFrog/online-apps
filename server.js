@@ -12,6 +12,6 @@ app.use(express.static(OUTPUT_PATH));
 compiler.watch({
   aggregateTimeout: 300,
   poll: true,
-}, (err, stats) => console.error(err, stats));
+}, err => console.error(err));
 
 app.listen(3000, () => console.log('App listening at 3000.'));
